@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import PropTypes from 'prop-types';
 
 export const Paper = ({
   children,
@@ -19,4 +20,11 @@ export const Paper = ({
       {children}
     </div>
   );
+};
+
+Paper.propTypes = {
+  elevation: PropTypes.oneOf([...new Array(24)].map((_, i) => i + 1)),
+  outlined: PropTypes.bool,
+  square: PropTypes.bool,
+  customClass: PropTypes.string
 };
