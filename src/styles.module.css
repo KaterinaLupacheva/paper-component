@@ -1,5 +1,9 @@
-.paper {
+.round {
   border-radius: 5px;
+}
+
+.square {
+  border-radius: unset;
 }
 
 .elevation-1 {
