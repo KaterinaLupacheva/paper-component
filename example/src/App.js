@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from '@ramonak/paper'
+import { Paper } from '@ramonak/paper'
 import '@ramonak/paper/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Paper elevation={1}/>
 }
 
 export default App
