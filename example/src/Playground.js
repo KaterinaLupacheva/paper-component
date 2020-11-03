@@ -29,12 +29,12 @@ const Playground = () => {
   const generateCode = () => {
     setCopySuccess('Copy');
     setShowCode(true);
-    const tempCode = `<Paper 
-    ${state.elevation ? `elevation={${state.elevation}}` : ''}
-    ${state.outlined ? 'outlined' : ''}
-    ${state.square ? 'square' : ''}
-    />`;
-    const code = tempCode.replace(/^\s*$(?:\r\n?|\n)/gm, '');
+    const tempCode = `<Paper ${
+      state.elevation && `elevation={${state.elevation}}`
+    } ${state.outlined ? 'outlined' : ''} ${state.square ? 'square' : ''} />`;
+    const code = tempCode
+      .replace(/^\s*$(?:\r\n?|\n)/gm, '')
+      .replace(/  +/g, ' ');
     setCodeValue(code);
   };
 
@@ -73,10 +73,10 @@ const Playground = () => {
           <option value={true}>True</option>
         </select>
 
-        <button className='reset-button' onClick={handleReset}>
+        <button className='myButton reset-button' onClick={handleReset}>
           RESET
         </button>
-        <button className='code-button' onClick={generateCode}>
+        <button className='myButton code-button' onClick={generateCode}>
           Generate Component Code
         </button>
         <div>
