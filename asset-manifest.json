@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.d6e75a2a.chunk.css",
-    "main.js": "./static/js/main.04aaf4f0.chunk.js",
-    "main.js.map": "./static/js/main.04aaf4f0.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.e3fc9297.js",
-    "runtime-main.js.map": "./static/js/runtime-main.e3fc9297.js.map",
-    "static/js/2.24bc0b4c.chunk.js": "./static/js/2.24bc0b4c.chunk.js",
-    "static/js/2.24bc0b4c.chunk.js.map": "./static/js/2.24bc0b4c.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.abda09e58d91d0dacd4e27b4298ce1d5.js": "./precache-manifest.abda09e58d91d0dacd4e27b4298ce1d5.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.d6e75a2a.chunk.css.map": "./static/css/main.d6e75a2a.chunk.css.map",
-    "static/js/2.24bc0b4c.chunk.js.LICENSE.txt": "./static/js/2.24bc0b4c.chunk.js.LICENSE.txt",
-    "static/js/main.04aaf4f0.chunk.js.LICENSE.txt": "./static/js/main.04aaf4f0.chunk.js.LICENSE.txt"
+    "main.css": "/paper-component/static/css/main.d6e75a2a.chunk.css",
+    "main.js": "/paper-component/static/js/main.04aaf4f0.chunk.js",
+    "main.js.map": "/paper-component/static/js/main.04aaf4f0.chunk.js.map",
+    "runtime-main.js": "/paper-component/static/js/runtime-main.0dd3051b.js",
+    "runtime-main.js.map": "/paper-component/static/js/runtime-main.0dd3051b.js.map",
+    "static/js/2.24bc0b4c.chunk.js": "/paper-component/static/js/2.24bc0b4c.chunk.js",
+    "static/js/2.24bc0b4c.chunk.js.map": "/paper-component/static/js/2.24bc0b4c.chunk.js.map",
+    "index.html": "/paper-component/index.html",
+    "precache-manifest.5cbb48336c7cc2abd1b74c79227eb6ed.js": "/paper-component/precache-manifest.5cbb48336c7cc2abd1b74c79227eb6ed.js",
+    "service-worker.js": "/paper-component/service-worker.js",
+    "static/css/main.d6e75a2a.chunk.css.map": "/paper-component/static/css/main.d6e75a2a.chunk.css.map",
+    "static/js/2.24bc0b4c.chunk.js.LICENSE.txt": "/paper-component/static/js/2.24bc0b4c.chunk.js.LICENSE.txt",
+    "static/js/main.04aaf4f0.chunk.js.LICENSE.txt": "/paper-component/static/js/main.04aaf4f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3fc9297.js",
+    "static/js/runtime-main.0dd3051b.js",
     "static/js/2.24bc0b4c.chunk.js",
     "static/css/main.d6e75a2a.chunk.css",
     "static/js/main.04aaf4f0.chunk.js"
