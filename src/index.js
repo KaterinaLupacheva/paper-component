@@ -23,7 +23,7 @@ export const Paper = ({
 };
 
 Paper.propTypes = {
-  elevation: PropTypes.oneOf([...new Array(24)].map((_, i) => i + 1)),
+  elevation: PropTypes.oneOf([...new Array(24)].map((_, i) => i + 1).concat([''])),
   outlined: PropTypes.bool,
   square: PropTypes.bool,
   customClass: PropTypes.string
