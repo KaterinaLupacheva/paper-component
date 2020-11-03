@@ -43,3 +43,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.reset-button{
+    margin: 20px;
+    background-color: darkseagreen;
+    font-size: large;
+    padding: 10px;
+}
+
+.code-button{
+    background-color: cyan;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+}

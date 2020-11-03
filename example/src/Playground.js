@@ -1,20 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Paper } from '@ramonak/paper';
 import './App.css';
 
 const Playground = () => {
-  const [state, setState] = useState({
+  const INITIAL_STATE = {
     elevation: '',
     outlined: false,
     square: false
-  });
-
-  const handleChange = (event) => {
-    setState({
-      ...state,
-      [event.target.name]: event.target.value
-    });
   };
+  const [state, setState] = useState(INITIAL_STATE);
+  const [showCode, setShowCode] = useState(false);
+  const [codeValue, setCodeValue] = useState('');
+  const [copySuccess, setCopySuccess] = useState('Copy');
+  const textAreaRef = useRef(null);
+
+  const handleReset = () => {
+    setState(INITIAL_STATE);
+    setShowCode(false);
+  };
+
+  const copyToClipboard = (e) => {
+    textAreaRef.current.select();
+    document.execCommand('copy');
+    e.target.focus();
+    setCopySuccess('Copied!');
+  };
+
+  const generateCode = () => {
+    setCopySuccess('Copy');
+    setShowCode(true);
+    const tempCode = `<Paper 
+    ${state.elevation ? `elevation={${state.elevation}}` : ''}
+    ${state.outlined ? 'outlined' : ''}
+    ${state.square ? 'square' : ''}
+    />`;
+    const code = tempCode.replace(/^\s*$(?:\r\n?|\n)/gm, '');
+    setCodeValue(code);
+  };
+
   return (
     <div className='playground-container'>
       <div className='paper-playground-wrapper'>
@@ -49,6 +72,25 @@ const Playground = () => {
           <option value={false}>False</option>
           <option value={true}>True</option>
         </select>
+
+        <button className='reset-button' onClick={handleReset}>
+          RESET
+        </button>
+        <button className='code-button' onClick={generateCode}>
+          Generate Component Code
+        </button>
+        <div>
+          {showCode && (
+            <div className='code-area'>
+              <button onClick={copyToClipboard}>{copySuccess}</button>
+              <textarea
+                ref={textAreaRef}
+                value={codeValue}
+                onChange={(e) => setCodeValue(e.target.value)}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
