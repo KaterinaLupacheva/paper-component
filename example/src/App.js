@@ -6,7 +6,7 @@ import Playground from './Playground';
 
 const App = () => {
   return (
-    <div className="container">
+    <div className='container'>
       <h2>DEMO</h2>
       <div className='wrapper'>
         <Paper customClass='paper-class'>
