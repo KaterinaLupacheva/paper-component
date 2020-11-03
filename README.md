@@ -28,9 +28,9 @@ const Example = () => {
 
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
-| `elevation` | `Number between 0 and` <br/>` 24.` |  | Shadow depth. |
+| `elevation` | `Number between 0 and` <br/>` 24` |  | Shadow depth. |
 | `oulined` | `boolean` | false | Outlined surface. |
-| `square` | `boolean` | false | If true, no rounded corners. |
+| `square` | `boolean` | false | If *true*, no rounded corners. |
 | `customClass` | `string` |  | Name of the css custom class to add custom styles. |
 
 ## License
