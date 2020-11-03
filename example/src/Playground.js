@@ -5,7 +5,8 @@ import './App.css';
 const Playground = () => {
   const [state, setState] = useState({
     elevation: '',
-    outlined: false
+    outlined: false,
+    square: false
   });
 
   const handleChange = (event) => {
@@ -26,13 +27,24 @@ const Playground = () => {
           id='elevation'
           type='text'
           placeholder='1-24 or empty'
-          onChange={handleChange}
+          onChange={(event) =>
+            setState({ ...state, elevation: Number(event.target.value) })
+          }
         />
         <label htmlFor='outlined'>Outlined</label>
         <select
           name='outlined'
           id='outlined'
           onChange={() => setState({ ...state, outlined: !state.outlined })}
+        >
+          <option value={false}>False</option>
+          <option value={true}>True</option>
+        </select>
+        <label htmlFor='square'>Square</label>
+        <select
+          name='square'
+          id='square'
+          onChange={() => setState({ ...state, square: !state.square })}
         >
           <option value={false}>False</option>
           <option value={true}>True</option>
