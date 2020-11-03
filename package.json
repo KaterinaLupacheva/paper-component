@@ -49,5 +49,12 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "paper",
+    "material design",
+    "material ui"
   ]
 }
