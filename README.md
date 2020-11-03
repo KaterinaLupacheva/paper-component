@@ -4,7 +4,15 @@
 
 [![NPM](https://img.shields.io/npm/v/@ramonak/paper.svg)](https://www.npmjs.com/package/@ramonak/paper) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)![npm bundle size](https://img.shields.io/bundlephobia/min/@ramonak/paper)![GitHub](https://img.shields.io/github/license/katerinalupacheva/paper-component)![npm](https://img.shields.io/npm/dw/@ramonak/paper)
 
+---
+
 ![demo](./paper-demo.JPG)
+
+---
+
+[Playground / Code Generator](https://katerinalupacheva.github.io/paper-component/)
+
+---
 
 ## Install
 
