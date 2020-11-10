@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Paper } from '@ramonak/paper';
+import Paper from '@ramonak/paper';
 import './App.css';
 
 const Playground = () => {

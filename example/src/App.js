@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Paper } from '@ramonak/paper';
+import Paper from '@ramonak/paper';
 import '@ramonak/paper/dist/index.css';
 import Playground from './Playground';
 
