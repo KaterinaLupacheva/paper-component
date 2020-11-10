@@ -26,6 +26,7 @@ npm install --save @ramonak/paper
 import React from 'react'
 
 import Paper from '@ramonak/paper'
+import '@ramonak/paper/dist/index.css'
 
 const Example = () => {
     return <Paper elevation={3}/>

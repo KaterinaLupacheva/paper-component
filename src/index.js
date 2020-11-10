@@ -16,10 +16,8 @@ const Paper = ({ children, elevation, outlined, square, customClass }) => {
   );
 };
 
-const check = [...new Array(24)].map((_, i) => i + 1).concat(['']);
-
 Paper.propTypes = {
-  elevation: PropTypes.oneOf(check),
+  elevation: PropTypes.oneOf([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,'']),
   outlined: PropTypes.bool,
   square: PropTypes.bool,
   customClass: PropTypes.string
