@@ -23,10 +23,7 @@ npm install --save @ramonak/paper
 ## Usage
 
 ```jsx
-import React from 'react'
-
 import Paper from '@ramonak/paper'
-import '@ramonak/paper/dist/index.css'
 
 const Example = () => {
     return <Paper elevation={3}/>
@@ -42,7 +39,6 @@ const Example = () => {
 | `square` | `boolean` | false | If *true*, no rounded corners. |
 | `customClass` | `string` |  | Name of the css custom class to add custom styles. |
 
-test
 ## License
 
 MIT © [KaterinaLupacheva](https://github.com/KaterinaLupacheva)
