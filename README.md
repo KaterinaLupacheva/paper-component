@@ -42,6 +42,7 @@ const Example = () => {
 | `square` | `boolean` | false | If *true*, no rounded corners. |
 | `customClass` | `string` |  | Name of the css custom class to add custom styles. |
 
+test
 ## License
 
 MIT © [KaterinaLupacheva](https://github.com/KaterinaLupacheva)
