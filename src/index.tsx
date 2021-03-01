@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-const styles = require('./styles.module.css');
+import './styles.css';
 
 export type PaperProps = {
   children?: React.ReactNode;
@@ -47,7 +47,7 @@ const Paper = ({
   const customStyles = customClass ? `${customClass}` : '';
   return (
     <div
-      className={`${styles[basicStyles]} ${styles[elevationStyles]} ${styles[outlinedStyles]} ${customStyles}`}
+      className={`${basicStyles} ${elevationStyles} ${outlinedStyles} ${customStyles}`}
     >
       {children}
     </div>
