@@ -3,8 +3,10 @@ import './App.css';
 import Paper from '@ramonak/paper';
 import '@ramonak/paper/dist/index.css';
 import Playground from './Playground';
+import useViewCounter from './useViewCounter.hook';
 
 const App = () => {
+  useViewCounter();
   return (
     <div className='container'>
       <h2>DEMO</h2>
